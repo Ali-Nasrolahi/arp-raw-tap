@@ -14,7 +14,7 @@ ovsup:
 	sudo ovs-vsctl add-port br0 tap0
 	sudo ip l set up int0
 	sudo ip l set up tap0
-	sudo ip a add 172.16.60.157/24 dev int0
+	sudo ip a add 192.168.1.10/24 dev int0
 
 ovsdown:
 	sudo ovs-vsctl del-br br0
